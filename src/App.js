@@ -221,7 +221,7 @@ function App() {
     <div>
       <header css={headerStyles}>
         <section css={sectionTopGridStyles}>
-          <div css={smStyles}></div>
+          <div css={smStyles}>.</div>
           <div>
             <Logo />
           </div>
@@ -244,8 +244,8 @@ function App() {
               <path
                 d="M1 2.353c149.283.488 452.122 1.171 469.219 0 17.097-1.17 226.536-.487 329.119 0 111.447.488 339.472 1.171 359.992 0C1184.97.89 1386.81.89 1405.81 1.1c15.2.167 136.46.906 195.19 1.254"
                 stroke="#000"
-                stroke-width="2"
-              ></path>
+                strokeWidth="2"
+              />
             </svg>
           </div>
           <nav>
@@ -269,13 +269,13 @@ function App() {
               width="auto"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              class="w-full hidden md:block"
+              className="w-full hidden md:block"
             >
               <path
                 d="M1 2.353c149.283.488 452.122 1.171 469.219 0 17.097-1.17 226.536-.487 329.119 0 111.447.488 339.472 1.171 359.992 0C1184.97.89 1386.81.89 1405.81 1.1c15.2.167 136.46.906 195.19 1.254"
                 stroke="#000"
-                stroke-width="2"
-              ></path>
+                strokeWidth="2"
+              />
             </svg>
           </div>
         </section>
@@ -291,7 +291,7 @@ function App() {
           </div>
         </div>
 
-        <div css={heroStyles}></div>
+        <div css={heroStyles}>.</div>
         <div css={longLineStyles}>
           <svg
             preserveAspectRatio="none"
@@ -299,13 +299,13 @@ function App() {
             width="auto"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            class="w-full hidden md:block"
+            className="w-full hidden md:block"
           >
             <path
               d="M1 2.353c149.283.488 452.122 1.171 469.219 0 17.097-1.17 226.536-.487 329.119 0 111.447.488 339.472 1.171 359.992 0C1184.97.89 1386.81.89 1405.81 1.1c15.2.167 136.46.906 195.19 1.254"
               stroke="#000"
-              stroke-width="2"
-            ></path>
+              strokeWidth="2"
+            />
           </svg>
         </div>
       </header>
@@ -338,13 +338,13 @@ function App() {
           width="auto"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          class="w-full hidden md:block"
+          className="w-full hidden md:block"
         >
           <path
             d="M1 2.353c149.283.488 452.122 1.171 469.219 0 17.097-1.17 226.536-.487 329.119 0 111.447.488 339.472 1.171 359.992 0C1184.97.89 1386.81.89 1405.81 1.1c15.2.167 136.46.906 195.19 1.254"
             stroke="#000"
-            stroke-width="2"
-          ></path>
+            strokeWidth="2"
+          />
         </svg>
       </div>
 
@@ -354,7 +354,7 @@ function App() {
           <h1>Roadmap</h1>
         </div>
 
-        <div></div>
+        <div>.</div>
 
         <div>
           <div css={numberStyles}>
@@ -416,13 +416,13 @@ function App() {
           width="auto"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          class="w-full hidden md:block"
+          className="w-full hidden md:block"
         >
           <path
             d="M1 2.353c149.283.488 452.122 1.171 469.219 0 17.097-1.17 226.536-.487 329.119 0 111.447.488 339.472 1.171 359.992 0C1184.97.89 1386.81.89 1405.81 1.1c15.2.167 136.46.906 195.19 1.254"
             stroke="#000"
-            stroke-width="2"
-          ></path>
+            strokeWidth="2"
+          />
         </svg>
       </div>
     </div>
