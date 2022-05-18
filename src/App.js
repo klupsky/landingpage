@@ -8,6 +8,7 @@ const headerStyles = css`
   justify-content: center;
   text-align: center;
   align-items: center;
+
   a {
     color: black;
     text-decoration: none;
@@ -76,7 +77,6 @@ const sectionTopButtonStyles = css`
   display: inline-block;
   height: 3.6rem;
   width: 10rem;
-  box-sizing: border-box;
 `;
 
 const buttonCenterStyles = css`
@@ -147,12 +147,71 @@ const anotherButtonStyles = css`
   padding: 0.3rem;
   width: 10rem;
 `;
-
-const imageStyles = css`
+const imageDivStyles = css`
   text-align: center;
   justify-content: center;
   align-items: center;
+`;
+
+const imageStyles = css`
+  margin-top: -2px;
+
   margin-right: 3rem;
+  margin-bottom: 20px;
+  margin-top: 0;
+`;
+
+const boxLineStyle = css`
+  border-left: 2px solid #000;
+`;
+
+const imageRightStyles = css`
+  margin-top: -2px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-left: 3rem;
+  margin-bottom: 20px;
+  margin-top: 0;
+`;
+
+const numberStyles = css`
+  position: relative;
+  top: 30px;
+`;
+
+const numberRightStyles = css`
+  position: relative;
+  top: 30px;
+  left: 30px;
+`;
+
+const roadmapLeftTextStyles = css`
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  margin-right: 3rem;
+  font-size: 1.625rem;
+  h1 {
+    font-size: 2rem;
+
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+`;
+
+const roadmapRightTextStyles = css`
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  margin-left: 3rem;
+  font-size: 1.625rem;
+  h1 {
+    font-size: 2rem;
+
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
 `;
 
 // APP START
@@ -294,14 +353,78 @@ function App() {
         <div css={joinTextStyles}>
           <h1>Roadmap</h1>
         </div>
+
         <div></div>
+
         <div>
-          <img src="/images/roadmap-done.svg" alt="" />
-          <div css={imageStyles}>
-            <img src="/images/roadmap-1.svg" alt="" />
+          <div css={numberStyles}>
+            <img src="/images/roadmap-done.svg" alt="" />
+          </div>
+          <div css={imageDivStyles}>
+            <img css={imageStyles} src="/images/roadmap-1.svg" alt="" />{' '}
+          </div>
+          <div css={roadmapLeftTextStyles}>
+            <h1>SERIES 1 - 3</h1>
+            Introducing the Weirdoverse, rat milk rewards and community games
+          </div>
+        </div>
+
+        <div css={boxLineStyle}>
+          <div css={numberRightStyles}>
+            <img src="/images/roadmap-done.svg" alt="" />
+          </div>
+          <div css={imageDivStyles}>
+            <img css={imageRightStyles} src="/images/roadmap-2.svg" alt="" />{' '}
+          </div>
+          <div css={roadmapRightTextStyles}>
+            <h1>PREPARATIONS</h1>
+            Building the Cream List and constructing the cloning machine
+          </div>
+        </div>
+
+        <div>
+          <div css={numberStyles}>
+            <img src="/images/3.svg" alt="" />
+          </div>
+          <div css={imageDivStyles}>
+            <img css={imageStyles} src="/images/roadmap-3.svg" alt="" />{' '}
+          </div>
+          <div css={roadmapLeftTextStyles}>
+            <h1>cloning</h1>
+            The Cloning Event, the Reveal Party and The Announcement
+          </div>
+        </div>
+
+        <div css={boxLineStyle}>
+          <div css={numberRightStyles}>
+            <img src="/images/4.svg" alt="" />
+          </div>
+          <div css={imageDivStyles}>
+            <img css={imageRightStyles} src="/images/roadmap-4.svg" alt="" />{' '}
+          </div>
+          <div css={roadmapRightTextStyles}>
+            <h1>project w</h1>
+            The future of the Weirdoverse hangs in the balance
           </div>
         </div>
       </section>
+
+      <div css={longLineStyles}>
+        <svg
+          preserveAspectRatio="none"
+          height="4"
+          width="auto"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="w-full hidden md:block"
+        >
+          <path
+            d="M1 2.353c149.283.488 452.122 1.171 469.219 0 17.097-1.17 226.536-.487 329.119 0 111.447.488 339.472 1.171 359.992 0C1184.97.89 1386.81.89 1405.81 1.1c15.2.167 136.46.906 195.19 1.254"
+            stroke="#000"
+            stroke-width="2"
+          ></path>
+        </svg>
+      </div>
     </div>
   );
 }
